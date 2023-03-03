@@ -3,20 +3,6 @@
 1/ Check ổ đĩa xem phân vùng:
 
     lsblk
-    
-root@ubuntu-s-4vcpu-8gb-nyc1-01:~# lsblk
-NAME    MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
-loop0     7:0    0  61.9M  1 loop /snap/core20/1518
-loop1     7:1    0  67.8M  1 loop /snap/lxd/22753
-loop3     7:3    0  49.9M  1 loop /snap/snapd/18357
-loop4     7:4    0  63.3M  1 loop /snap/core20/1822
-loop5     7:5    0  91.9M  1 loop /snap/lxd/24061
-sda       8:0    0   100G  0 disk 
-vda     252:0    0   160G  0 disk 
-├─vda1  252:1    0 159.9G  0 part /
-├─vda14 252:14   0     4M  0 part 
-└─vda15 252:15   0   106M  0 part /boot/efi
-vdb     252:16   0   466K  1 disk 
 
 2/ Xoá dữ liệu ổ mới thuê: ở đây là sda
 
