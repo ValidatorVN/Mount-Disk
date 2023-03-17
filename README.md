@@ -16,13 +16,20 @@ nhấn y để đồng ý.
 
 4/ Mount ổ bạn muốn cài node: ví dụ .nibid
 
-    mkdir .nibid
-    chmod +x nibid
-    mount -t ext4 /dev/sda1 /root/.nibid
+    mkdir /mnt/sda
+    chmod +x /mnt/sda
+    mount -t ext4 /dev/sda1 /mnt/sda
     
 5/ Thêm lưu trữ không mất dữ liệu nếu restart
+Mở file /etc/fstab và thêm dòng sau vào cuối file:
 
     nano /etc/fstab
     
-    /dev/sda1 /root/.nibid ext4  defaults     0   0
+    /dev/sda1 /mnt/sda ext4  defaults     0   0
     
+    
+Lưu trữ bằng UUID:
+
+    lsblk -o NAME,UUID,SIZE
+    
+    UUID=xxx /mnt/sda ext4 defaults 0 0
